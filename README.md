@@ -1,3 +1,7 @@
 ## resume
 
-[在线简历](https://feihu1996x.github.io/resume/)
+> RESUME ONLINE 
+
+[Chinese Version](https://feihu1996x.github.io/resume/?language=zh-cn)
+
+[English Version](https://feihu1996x.github.io/resume/?language=en)
