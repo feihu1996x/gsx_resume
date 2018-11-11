@@ -24,39 +24,39 @@
                     <input type="text" id="avatar-url">
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
-                <h1 id="username" >Angus</h1>
-                <h4 id="persona-tag" >Python / Web / 移动互联网</h4>
+                <h1 id="username" >{{ source?source.me.username:'' }}</h1>
+                <h4 id="persona-tag" >{{ source?source.me['persona-tag']:'' }}</h4>
             </div>
             <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">{{ source?source.profile['info-title']:'' }}</span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label">姓名</label><span class="label-value">高少祥</span></li>
+                        <label class="left-label">{{ source?source.profile['info-list'].name.title:'' }}</label><span class="label-value">{{ source?source.profile['info-list'].name.content:'' }}</span></li>
                     <li>
-                        <label class="left-label">性别</label><span class="label-value">男</span></li>                        
+                        <label class="left-label">{{ source?source.profile['info-list'].gender.title:'' }}</label><span class="label-value">{{ source?source.profile['info-list'].gender.content:'' }}</span></li>                        
                     <li>
-                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                        <label class="left-label">{{ source?source.profile['info-list']['education-background'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['education-background'].content:'' }}</span></li>
                     <li>
-                        <label class="left-label">专业</label><span class="label-value">经济学</span></li>                        
+                        <label class="left-label">{{ source?source.profile['info-list']['major'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['major'].content:'' }}</span></li>                        
                     <li>
-                        <label class="left-label">毕业院校</label><span class="label-value">四川师范大学</span></li>
+                        <label class="left-label">{{ source?source.profile['info-list']['graduate-school'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['graduate-school'].content:'' }}</span></li>
                     <li>
-                        <label class="left-label">毕业年份</label><span class="label-value">2018</span></li>                                        
+                        <label class="left-label">{{ source?source.profile['info-list']['graduation-year'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['graduation-year'].content:'' }}</span></li>                                        
                 </ul>
             </div>
             <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">{{ source?source.contact['info-title']:'' }}</span></h2>
                 <hr>
                 <ul class="info-list">                    
                     <li>
-                        <label class="left-label">手机</label><span class="label-value">17343009173</span></li>
+                        <label class="left-label">{{ source?source.contact['info-list']['mobile-phone'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['mobile-phone'].content:'' }}</span></li>
                     <li>
-                        <label class="left-label">邮箱</label><span class="label-value">gsx0312@qq.com</span></li>
+                        <label class="left-label">{{ source?source.contact['info-list']['email'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['email'].content:'' }}</span></li>
                     <li>
-                        <label class="left-label">博客</label><span class="label-value">feihu1996.cn</span></li>
+                        <label class="left-label">{{ source?source.contact['info-list']['blog'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['blog'].content:'' }}</span></li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/feihu1996x</span></li>
+                        <label class="left-label">{{ source?source.contact['info-list']['github'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['github'].content:'' }}</span></li>
                 </ul>
             </div>
             <!-- <div class="skill info-unit">
@@ -82,60 +82,29 @@
                 </ul>
             </div> -->
             <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">{{ source?source.stack['info-title']:'' }}</span></h2>
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">前端</label><span class="label-value">
-                            HTML / 
-                            CSS / 
-                            JavaScript / 
-                            Vue.js / 
-                            MUI / 
-                            ECharts / 
-                            BootStrap / 
-                            JQuery / 
-                            Webpack / 
-                            Gulp
+                        <label class="left-label">{{ source?source.stack['stack-list']['front-end'].title:'' }}</label><span class="label-value">
+                                {{ source?source.stack['stack-list']['front-end'].content:'' }}
                         </span></li>
                     </li>
                     <li>
-                        <label class="left-label">后端</label><span class="label-value">
-                            Python / 
-                            Flask / 
-                            Django / 
-                            Django REST framework / 
-                            Scrapy / 
-                            Node.js / 
-                            Express / 
-                            Koa / 
-                            PHP / 
-                            Laravel / 
-                            Go / 
-                            Ruby / 
-                            C / 
-                            C++ / 
-                            MySQL / 
-                            MongoDB / 
-                            Redis
+                        <label class="left-label">{{ source?source.stack['stack-list']['backend'].title:'' }}</label><span class="label-value">
+                                {{ source?source.stack['stack-list']['backend'].content:'' }}
                         </span></li>
                     </li>
                     <li>
-                        <label class="left-label">其它</label><span class="label-value">
-                            Linux / 
-                            Git / 
-                            Selenium / 
-                            Appium / 
-                            Docker / 
-                            Nginx / 
-                            Hadoop
+                        <label class="left-label">{{ source?source.stack['stack-list']['other'].title:'' }}</label><span class="label-value">
+                                {{ source?source.stack['stack-list']['other'].content:'' }}
                         </span></li>
                     </li>
                 </ul>
             </div>
 
             <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">{{ source?source.code['info-title']:'' }}</span></h2>
                 <hr>
                 <div class="weixin">
                     <img src="static/image/weixin.png" alt="">
@@ -191,184 +160,30 @@
                 </ul class="experience-list">
             </div> -->
             <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">技能描述</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">{{ source?source.skill['info-title']:'' }}</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <li>
-                        <h3>
-                            熟悉
-                            HTML5 / 
-                            CSS3 / 
-                            JavaScript（含ES6 / ES7）/ 
-                            Vue全家桶（Vue.js / Vue Router / Vue Resource / Axios / Vuex）/ 
-                            MUI / 
-                            Webpack / 
-                            Gulp                            
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            了解
-                            ECharts / 
-                            BootStrap / 
-                            JQuery
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            熟悉
-                            Python / 
-                            Flask / 
-                            Django / 
-                            Django REST framework / 
-                            Scrapy / 
-                            Node.js / 
-                            Express / 
-                            Koa / 
-                            MySQL / 
-                            MongoDB / 
-                            Redis / 
-                            微信开发（小程序 、 公众号）
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            了解
-                            PHP / 
-                            Laravel / 
-                            Go / 
-                            Ruby /
-                            C / 
-                            C++ / 
-                            Nginx / 
-                            Docker /
-                            Hadoop
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            熟悉
-                            RESTFul API的设计开发 / 
-                            前后端分离的开发模式 / 
-                            Linux操作系统 / 
-                            Git / 
-                            Visual Studio Code / 
-                            Vim / 
-                            Selenium / 
-                            Appium
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            持续学习者，对技术有着发自内心的兴趣，一直在深度和广度两个方面不断拓宽自己的技术栈
+                    <li v-for="item in (source?source.skill['skill-list']:[])">
+                        <h3>      
+                            {{ item }}                   
                         </h3>
                     </li>
                 </ul>
             </div>
             <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">项目经验</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">{{ source?source.project['info-title']:'' }}</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <li>
-                        <h3>大数据统计与可视化系统</h3>
+                    <li v-for="item in (source?source.project['info-list']:[])">
+                        <h3>{{ item.title }}</h3>
                         <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/hpshSystem/
+                            <b>{{ item.link.title }}</b>：{{ item.link.content }}
                         </p>
                         <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / Echarts / Flask / Python / MySQL / MongoDB / Redis / Hadoop / HDFS / Hive / SQoop
+                            <b>{{ item.desc.title }}</b>：{{ item.desc.content }}
                         </p>
+                        <br v-show="source === data['zh-cn']">
                     </li>
-                    <br>
-                    <li>
-                        <h3>画廊式项目展示系统</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/works/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / Vue.js / Django / Xadmin / Python / MySQL
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>随机密码生成器</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/randomKey/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / Python / Flask
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>仿豆瓣电影APP</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/MMovie/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / MUI / Vue.js / Node.js / Express
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>仿豆瓣电影微信小程序</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/WMovie/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / BootStrap / Node.js / Express
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>使用ES6构建的彩票项目</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/fakeLottery/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript(ES6) / Gulp / Node.js / Express
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>Web Todo应用</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/nextToDo/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / Vue.js / Webpack / Node.js / Express
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>仿"中国大学MOOC"网站</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/qinXueOnLine/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / JQuery / Python / Django / Xadmin / MySQL
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>QQ/微信群信息抓取系统</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/qqGroupNeeds/
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / Layui / Vue.js / Node.js / Express / Python / Flask / MySQL / Selenium / Appium
-                        </p>
-                    </li>
-                    <br>
-                    <li>
-                        <h3>简易商城系统</h3>
-                        <p>
-                            <b>项目链接</b>：http://dev.feihu1996.cn/vueMall
-                        </p>
-                        <p>
-                            <b>技术栈</b>：HTML / CSS / JavaScript / Vue.js / Node.js / Express / MongoDB
-                        </p>
-                    </li>
-                    <br>
                 </ul>                
             </div>
             <!-- <div class="aboutme info-unit right-paragraph">
@@ -388,6 +203,437 @@
             </div> -->
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#cv',
+            data: {
+                data: {
+                    "zh-cn": {
+                        "me": {
+                            "username": "Angus",
+                            "persona-tag": "Python / Web / 移动互联网"
+                        },
+                        "profile": {
+                            "info-title": "基本信息",
+                            "info-list": {
+                                "name": {
+                                    "title": "姓名",
+                                    "content": "高少祥"
+                                },
+                                "gender": {
+                                    "title": "性别",
+                                    "content": "男"
+                                },
+                                "education-background": {
+                                    "title": "学历",
+                                    "content": "本科"
+                                },
+                                "graduate-school": {
+                                    "title": "毕业院校",
+                                    "content": "四川师范大学"
+                                },
+                                "graduation-year": {
+                                    "title": "毕业年份",
+                                    "content": "2018"
+                                },
+                                "major": {
+                                    "title": "专业",
+                                    "content": "经济学"                    
+                                }
+                            }
+                        },
+                        "contact": {
+                            "info-title": "联系方式",
+                            "info-list": {
+                                "mobile-phone": {
+                                    "title": "手机",
+                                    "content": "17343009173"
+                                },
+                                "email": {
+                                    "title": "邮箱",
+                                    "content": "gsx0312@qq.com"
+                                },
+                                "blog": {
+                                    "title": "博客",
+                                    "content": "feihu1996.cn"
+                                },
+                                "github": {
+                                    "title": "Github",
+                                    "content": "github.com/feihu1996x"
+                                }
+                            }
+                        },
+                        "stack": {
+                            "info-title": "技术栈",
+                            "stack-list": {
+                                "front-end": {
+                                    "title": "前端",
+                                    "content": "HTML / CSS / JavaScript / Vue.js / MUI / ECharts / BootStrap / JQuery / Webpack / Gulp"
+                                },
+                                "backend": {
+                                    "title": "后端",
+                                    "content": "Python / Flask / Django / Django REST framework / Scrapy / Node.js / Express / Koa / PHP / Laravel / Go / Ruby / C / C++ / MySQL / MongoDB / Redis"
+                                },
+                                "other": {
+                                    "title": "其他",
+                                    "content": "Linux / Git / Selenium / Appium / Docker / Nginx / Hadoop"
+                                }
+                            }
+                        },
+                        "code": {
+                            "info-title": "个人微信"
+                        },
+                        "skill": {
+                            "info-title": "技能描述",
+                            "skill-list": [
+                                "熟悉HTML5 / CSS3 / JavaScript（含ES6 / ES7）/ Vue全家桶（Vue.js / Vue Router / Vue Resource / Axios / Vuex）/ MUI / Webpack / Gulp",
+                                "了解ECharts / BootStrap / JQuery",
+                                "熟悉Python / Flask / Django / Django REST framework / Scrapy / Node.js / Express / Koa / MySQL / MongoDB / Redis / 微信开发（小程序 、 公众号）",
+                                "了解PHP / Laravel / Go / Ruby / C / C++ / Nginx / Docker / Hadoop",
+                                "熟悉RESTFul API的设计开发 / 前后端分离的开发模式 / Linux操作系统 / Git / Visual Studio Code / Vim / Selenium / Appium",
+                                "持续学习者，对技术有着发自内心的兴趣，一直在深度和广度两个方面不断拓宽自己的技术栈"
+                            ]
+                        },
+                        "project": {
+                            "info-title": "项目经验",
+                            "info-list": [
+                                {
+                                    "title": "大数据统计与可视化系统",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/hpshSystem/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / Echarts / Flask / Python / MySQL / MongoDB / Redis / Hadoop / HDFS / Hive / SQoop"
+                                    }
+                                },
+                                {
+                                    "title": "画廊式项目展示系统",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/works/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / Vue.js / Django / Xadmin / Python / MySQL"
+                                    }
+                                },
+                                {
+                                    "title": "随机密码生成器",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/randomKey/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / Python / Flask"
+                                    }
+                                },
+                                {
+                                    "title": "仿豆瓣电影APP",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/MMovie/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / MUI / Vue.js / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "仿豆瓣电影微信小程序",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/WMovie/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / BootStrap / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "使用ES6构建的彩票项目",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/fakeLottery/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript(ES6) / Gulp / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "Web Todo应用",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/nextToDo/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / Vue.js / Webpack / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "仿'中国大学MOOC/'网站",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/qinXueOnLine/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / JQuery / Python / Django / Xadmin / MySQL"
+                                    }
+                                },
+                                {
+                                    "title": "QQ/微信群信息抓取系统",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/qqGroupNeeds/"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / Layui / Vue.js / Node.js / Express / Python / Flask / MySQL / Selenium / Appium"
+                                    }
+                                },
+                                {
+                                    "title": "简易商城系统",
+                                    "link": {
+                                        "title": "项目链接",
+                                        "content": "http://dev.feihu1996.cn/vueMall"
+                                    },
+                                    "desc": {
+                                        "title": "技术栈",
+                                        "content": "HTML / CSS / JavaScript / Vue.js / Node.js / Express / MongoDB"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "en": {
+                        "me": {
+                            "username": "Angus",
+                            "persona-tag": "Python / Web / Mobile Internet"
+                        },
+                        "profile": {
+                            "info-title": "Basic Info",
+                            "info-list": {
+                                "name": {
+                                    "title": "Name",
+                                    "content": "Shaoxiang Gao"
+                                },
+                                "gender": {
+                                    "title": "Gender",
+                                    "content": "Male"
+                                },
+                                "education-background": {
+                                    "title": "Education",
+                                    "content": "Bachelor Degree"
+                                },
+                                "graduate-school": {
+                                    "title": "School",
+                                    "content": "SICNU"
+                                },
+                                "graduation-year": {
+                                    "title": "Graduate",
+                                    "content": "2018"
+                                },
+                                "major": {
+                                    "title": "Major",
+                                    "content": "Economics"                    
+                                }                
+                            }
+                        },
+                        "contact": {
+                            "info-title": "Contact",
+                            "info-list": {
+                                "mobile-phone": {
+                                    "title": "Mobile Phone",
+                                    "content": "17343009173"
+                                },
+                                "email": {
+                                    "title": "Email",
+                                    "content": "gsx0312@qq.com"
+                                },
+                                "blog": {
+                                    "title": "Blog",
+                                    "content": "feihu1996.cn"
+                                },
+                                "github": {
+                                    "title": "Github",
+                                    "content": "github.com/feihu1996x"
+                                }
+                            }
+                        },
+                        "stack": {
+                            "info-title": "Tech Stack",
+                            "stack-list": {
+                                "front-end": {
+                                    "title": "Front End",
+                                    "content": "HTML / CSS / JavaScript / Vue.js / MUI / ECharts / BootStrap / JQuery / Webpack / Gulp"
+                                },
+                                "backend": {
+                                    "title": "Backend",
+                                    "content": "Python / Flask / Django / Django REST framework / Scrapy / Node.js / Express / Koa / PHP / Laravel / Go / Ruby / C / C++ / MySQL / MongoDB / Redis"
+                                },
+                                "other": {
+                                    "title": "Other",
+                                    "content": "Linux / Git / Selenium / Appium / Docker / Nginx / Hadoop"
+                                }
+                            }
+                        },
+                        "code": {
+                            "info-title": "WeChat Qr Code"
+                        },
+                        "skill": {
+                            "info-title": "Skill Description",
+                            "skill-list": [
+                                "Master HTML5 / CSS3 / JavaScript（ES5 / ES6 / ES7）/ Vue Stack（Vue.js / Vue Router / Vue Resource / Axios / Vuex）/ MUI / Webpack / Gulp",
+                                "Understand ECharts / BootStrap / JQuery",
+                                "Master Python / Flask / Django / Django REST framework / Scrapy / Node.js / Express / Koa / MySQL / MongoDB / Redis / WeChat Development",
+                                "Understand PHP / Laravel / Go / Ruby / C / C++ / Nginx / Docker / Hadoop",
+                                "Master RESTFul API / Linux OS / Git / Visual Studio Code / Vim / Selenium / Appium",
+                                "Continuous learners, who have a genuine interest in technology, have been expanding my technology stack in both depth and breadth"
+                            ]
+                        },
+                        "project": {
+                            "info-title": "Project Experience",
+                            "info-list": [
+                                {
+                                    "title": "Big Data Statistics And Visualization System",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/hpshSystem/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / Echarts / Flask / Python / MySQL / MongoDB / Redis / Hadoop / HDFS / Hive / SQoop"
+                                    }
+                                },
+                                {
+                                    "title": "Gallery Project Presentation System",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/works/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / Vue.js / Django / Xadmin / Python / MySQL"
+                                    }
+                                },
+                                {
+                                    "title": "Random Password Generator",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/randomKey/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / Python / Flask"
+                                    }
+                                },
+                                {
+                                    "title": "Fake Douban Movie App",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/MMovie/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / MUI / Vue.js / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "Fake Douban Movie Mini Program",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/WMovie/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / BootStrap / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "Lottery Projects Built Using ES6",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/fakeLottery/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript(ES6) / Gulp / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "Web Todo App",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/nextToDo/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / Vue.js / Webpack / Node.js / Express"
+                                    }
+                                },
+                                {
+                                    "title": "Fake MOOC Website",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/qinXueOnLine/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / JQuery / Python / Django / Xadmin / MySQL"
+                                    }
+                                },
+                                {
+                                    "title": "QQ Message Crawl System",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/qqGroupNeeds/"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / Layui / Vue.js / Node.js / Express / Python / Flask / MySQL / Selenium / Appium"
+                                    }
+                                },
+                                {
+                                    "title": "E-Mall System",
+                                    "link": {
+                                        "title": "Project Link",
+                                        "content": "http://dev.feihu1996.cn/vueMall"
+                                    },
+                                    "desc": {
+                                        "title": "Technology Stack",
+                                        "content": "HTML / CSS / JavaScript / Vue.js / Node.js / Express / MongoDB"
+                                    }
+                                }
+                            ]
+                        }
+                    }                    
+                },
+                source: null,
+            },
+            mounted(){
+                this.init();
+            },
+            methods: {
+                init(){
+                    this.source = this.data['zh-cn'];
+                    if('?language=zh-cn' == location.search){
+                        this.source = this.data['zh-cn'];
+                    }
+                    if('?language=en' == location.search){
+                        this.source = this.data['en'];
+                    }
+                    console.log(this.source);
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
