@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>高少祥-简历</title>
-    <link rel="shortcut icon" href="static/favicon.ico?201811101305" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
@@ -24,39 +23,33 @@
                     <input type="text" id="avatar-url">
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
-                <h1 id="username" >{{ source?source.me.username:'' }}</h1>
-                <h4 id="persona-tag" >{{ source?source.me['persona-tag']:'' }}</h4>
+                <h1 id="username" >高少祥</h1>
+                <h4 id="persona-tag" >我有三年的Python、Node.js和JavaScript语言开发经验。对中小型网站、跨平台Hybrid App、微信小程序、微信公众号后台以及定向网络爬虫系统，我都曾从0到1构建过。</h4>
             </div>
             <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">{{ source?source.profile['info-title']:'' }}</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label">{{ source?source.profile['info-list'].name.title:'' }}</label><span class="label-value">{{ source?source.profile['info-list'].name.content:'' }}</span></li>
+                        <label class="left-label">姓名</label><span class="label-value">高少祥</span></li>
                     <li>
-                        <label class="left-label">{{ source?source.profile['info-list'].gender.title:'' }}</label><span class="label-value">{{ source?source.profile['info-list'].gender.content:'' }}</span></li>                        
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
                     <li>
-                        <label class="left-label">{{ source?source.profile['info-list']['education-background'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['education-background'].content:'' }}</span></li>
+                        <label class="left-label">专业</label><span class="label-value">经济学</span></li>                        
                     <li>
-                        <label class="left-label">{{ source?source.profile['info-list']['major'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['major'].content:'' }}</span></li>                        
+                        <label class="left-label">毕业院校</label><span class="label-value">四川师范大学</span></li>
                     <li>
-                        <label class="left-label">{{ source?source.profile['info-list']['graduate-school'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['graduate-school'].content:'' }}</span></li>
-                    <li>
-                        <label class="left-label">{{ source?source.profile['info-list']['graduation-year'].title:'' }}</label><span class="label-value">{{ source?source.profile['info-list']['graduation-year'].content:'' }}</span></li>                                        
+                        <label class="left-label">毕业年份</label><span class="label-value">2018</span></li>
                 </ul>
             </div>
             <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">{{ source?source.contact['info-title']:'' }}</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
                 <hr>
-                <ul class="info-list">                    
+                <ul class="info-list">
                     <li>
-                        <label class="left-label">{{ source?source.contact['info-list']['mobile-phone'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['mobile-phone'].content:'' }}</span></li>
+                        <label class="left-label">手机</label><span class="label-value">17343009173</span></li>
                     <li>
-                        <label class="left-label">{{ source?source.contact['info-list']['email'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['email'].content:'' }}</span></li>
-                    <li>
-                        <label class="left-label">{{ source?source.contact['info-list']['blog'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['blog'].content:'' }}</span></li>
-                    <li>
-                        <label class="left-label">{{ source?source.contact['info-list']['github'].title:'' }}</label><span class="label-value">{{ source?source.contact['info-list']['github'].content:'' }}</span></li>                                                    
+                        <label class="left-label">邮箱</label><span class="label-value">gsx0312@qq.com</span></li>
                 </ul>
             </div>
             <!-- <div class="skill info-unit">
@@ -64,47 +57,43 @@
                 <hr>
                 <ul class="progress-list">
                     <li>
+                        <label class="left-label">JavaScript</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
                         <label class="left-label">Python</label>
                         <progress value="80" max="100"></progress>
                     </li>
                     <li>
-                        <label class="left-label">html/css</label>
-                        <progress value="70" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">Javascript</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">机器学习</label>
-                        <progress value="60" max="100"></progress>
+                        <label class="left-label">HTML/CSS</label>
+                        <progress value="80" max="100"></progress>
                     </li>
                 </ul>
             </div> -->
             <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">{{ source?source.stack['info-title']:'' }}</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">{{ source?source.stack['stack-list']['front-end'].title:'' }}</label><span class="label-value">
-                                {{ source?source.stack['stack-list']['front-end'].content:'' }}
+                        <label class="left-label">前端</label><span class="label-value">
+                                HTML/CSS、JavaScript、Vue.js、Webpack、Gulp、MUI、JQuery、BootStrap、ECharts、Layui
                         </span></li>
                     </li>
                     <li>
-                        <label class="left-label">{{ source?source.stack['stack-list']['backend'].title:'' }}</label><span class="label-value">
-                                {{ source?source.stack['stack-list']['backend'].content:'' }}
+                        <label class="left-label">后端</label><span class="label-value">
+                                Node.js、Express、Koa、Python、Flask、Django、Scrapy、PHP、Laravel、Go、Ruby、C/C++、MySQL、MongoDB、Redis
                         </span></li>
                     </li>
                     <li>
-                        <label class="left-label">{{ source?source.stack['stack-list']['other'].title:'' }}</label><span class="label-value">
-                                {{ source?source.stack['stack-list']['other'].content:'' }}
+                        <label class="left-label">其它</label><span class="label-value">
+                                Linux、Nginx、Docker、Git、Selenium、Appium、Hadoop
                         </span></li>
                     </li>
                 </ul>
             </div>
 
             <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">{{ source?source.code['info-title']:'' }}</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
                 <hr>
                 <div class="weixin">
                     <img src="static/image/weixin.png" alt="">
@@ -120,7 +109,7 @@
         </div>
         <div class="main">
             <!-- <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育背景</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
@@ -132,336 +121,126 @@
                 </ul>
             </div> -->
             <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">{{ source?source.work['info-title']:'' }}</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <li v-for="item in (source?source.work['info-list']:[])">
-                        <h3>{{ item.position }}</h3>
-                        <p>{{ item.desc }}</p>
+                    <li>
+                        <h3>TransferEasy－数据实习生（2018.03-2018.06）</h3>
+                        <p>
+                                主要负责目标数据抓取和清洗相关工作：<br>
+                                1.  编写和维护网络爬虫，针对定点网站进行目标数据的大规模抓取和入库，实习期间，编写了近 500只网络爬虫，数据抓取量达到百万条 <br>
+                                2. 基于Scrapy框架进行二次开发，提升数据抓取的质量和效率，实现有效数据上涨30%
+                        </p>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>孢子科技(北京)有限公司－Python开发工程师（2018.09-2018.10）</h3>
+                        <p>
+                                主要负责大数据抓取和后端开发相关工作：<br>
+                                1. 开发定向爬虫（目标网站、QQ、微信）以及配套的抓取后台，实现公司业务量上涨30% <br>
+                                2. 开发主站配套的微信公众号后台相关功能，提高主站服务质量，提升用户体验 <br>
+                                3. 孢子3.0项目后端开发，永久免收成交服务费，优化接单审核流程，实现用户规模扩张20%                            
+                        </p>
+                        <br>
                     </li>
                 </ul class="experience-list">
             </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">{{ source?source.skill['info-title']:'' }}</span></h2>
+            <!-- <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <li v-for="item in (source?source.skill['skill-list']:[])">
-                        <h3>      
-                            {{ item }}                   
-                        </h3>
-                    </li>
-                </ul>
-            </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">{{ source?source.project['info-title']:'' }}</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li v-for="item in (source?source.project['info-list']:[])">
-                        <h3>{{ item.title }}</h3>
+                    <li>
+                        <h3>基于 Qt 5 的文本编辑器</h3>
                         <p>
-                            <b>{{ item.link.title }}</b>：{{ item.link.content }}
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <br/>
                         </p>
                     </li>
-                </ul>                
-            </div>
-            <!-- <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">附加说明</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li class="experience-list">
-                        <h3>兴趣爱好</h3>
+                    <li>
+                        <h3>基于 Flask 的主机监视系统</h3>
                         <p>
-                            学习 / 囤书 / 囤课 / 撸代码 / 看片 / 旅游 / 吃鸡 / 跑步 ...
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
-                    </li>   
-                    <li class="experience-list">
-                        <h3>技术爱好者和持续学习者，一直在深度和广度上不断更新自身的技术栈</h3>                  
+                    </li>
+                    <li>
+                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </li>
                 </ul>
             </div> -->
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>
+                            拥有比较丰富的Web开发项目实战经验，对HTML,CSS,JS,Vue.js,Node.js,Express,Koa,Python,Django,Flask等Web开发技术有着较为深入的理解，  熟悉MySQL,MongoDB,Redis等常用数据库的基本操作，擅长Python和JavaScript                            
+                        </h3>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>
+                            拥有微信公众号项目实战经验，熟悉微信公众号特有的开发规范、流程、接口调用、验证授权等，能独立开发微信公众号后台                            
+                        </h3>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>
+                            拥有微信小程序项目实战经验，能独立开发微信小程序应用，有一定的模块化编程理念                            
+                        </h3>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>
+                            日常开发使用Linux操作系统、Git版本控制工具、VS Code编辑器，拥有自己的Linux服务器，对阿里云等云平台有一定程度的了解                            
+                        </h3>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>
+                            在闲暇时间，我会更新我的个人技术博客(http://www.feihu1996.cn)，在GitHub上阅读优秀项目的源代码，以及尝试新的技术和框架                            
+                        </h3>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">相关链接</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>技术博客</h3>
+                        <p>
+                            http://www.feihu1996.cn/
+                        </p>
+                        <br>
+                    </li> 
+                    <li>
+                        <h3>Demo</h3>
+                        <p>
+                            http://dev.feihu1996.cn/works/
+                        </p>
+                        <br>
+                    </li> 
+                    <li>
+                        <h3>GitHub</h3>
+                        <p>
+                            https://github.com/feihu1996x
+                        </p>
+                        <br>
+                    </li>                     
+            </div>          
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-        new Vue({
-            el: '#cv',
-            data: {
-                data: {
-                    "zh-cn": {
-                        "me": {
-                            "username": "Angus",
-                            "persona-tag": "Python / Web / 移动互联网"
-                        },
-                        "profile": {
-                            "info-title": "基本信息",
-                            "info-list": {
-                                "name": {
-                                    "title": "姓名",
-                                    "content": "高少祥"
-                                },
-                                "gender": {
-                                    "title": "性别",
-                                    "content": "男"
-                                },
-                                "education-background": {
-                                    "title": "学历",
-                                    "content": "本科"
-                                },
-                                "graduate-school": {
-                                    "title": "毕业院校",
-                                    "content": "四川师范大学"
-                                },
-                                "graduation-year": {
-                                    "title": "毕业年份",
-                                    "content": "2018"
-                                },
-                                "major": {
-                                    "title": "专业",
-                                    "content": "经济学"                    
-                                }
-                            }
-                        },
-                        "contact": {
-                            "info-title": "联系方式",
-                            "info-list": {
-                                "mobile-phone": {
-                                    "title": "手机",
-                                    "content": "17343009173"
-                                },
-                                "email": {
-                                    "title": "邮箱",
-                                    "content": "gsx0312@qq.com"
-                                },
-                                "github": {
-                                    "title": "GitHub",
-                                    "content": "github.com/feihu1996x"
-                                },
-                                "blog": {
-                                    "title": "博客",
-                                    "content": "feihu1996.cn"
-                                },                                                                
-                            }
-                        },
-                        "stack": {
-                            "info-title": "技术栈",
-                            "stack-list": {
-                                "front-end": {
-                                    "title": "前端",
-                                    "content": "HTML/CSS、JavaScript、Vue.js、Webpack、Gulp、MUI、JQuery、BootStrap、ECharts、Layui"
-                                },
-                                "backend": {
-                                    "title": "后端",
-                                    "content": "Python、Flask、Django、Scrapy、Node.js、Express、Koa、PHP、Laravel、Go、Ruby、C/C++、MySQL、MongoDB、Redis"
-                                },
-                                "other": {
-                                    "title": "其他",
-                                    "content": "Linux、Nginx、Docker、Git、Selenium、Appium、Hadoop"
-                                }
-                            }
-                        },
-                        "code": {
-                            "info-title": "个人微信"
-                        },
-                        "skill": {
-                            "info-title": "技能描述",
-                            "skill-list":[
-                                "掌握HTML、CSS、JavaScript（ES5、ES6、ES7）",
-                                "掌握Vue全家桶，包括Vue.js、Vue Resource、Axios、Vue Router、Vuex",
-                                "熟悉Hybrid App的开发（使用MUI）",
-                                "熟悉微信小程序和微信公众号开发",
-                                "熟悉前端构建工具（Gulp和Webpack）",
-                                "掌握Python语言及其常见Web开发框架，如Django和Flask，了解Django REST framework",
-                                "熟悉Python网络爬虫相关技术，如正则表达式、XPath表达式、Urllib库、requests库、反爬破解、抓包分析、Scrapy爬虫框架、BeautifulSoup、分布式爬虫等",
-                                "熟悉Node.js及其常见Web开发框架，如Express和Koa",
-                                "熟悉MySQL、MongoDB和Redis数据库",
-                                "熟悉RESTFul Api的设计开发",
-                                "熟悉自动化测试工具，包括Selenium和Appium",
-                                "熟悉Linux操作系统",
-                                "熟悉Git版本控制系统",
-                                "熟悉Docker容器基本操作",
-                                "熟悉Nginx基本配置",
-                                "熟悉HTTP/TCP/IP网络通信基本原理",
-                                "了解ECharts可视化JS库",
-                                "了解JQuery和BootStrap",
-                                "了解Hadoop大数据生态圈，如HDFS、MapReduce、Hive、SQoop",
-                                "了解PHP、Go、Ruby、C、C++",
-                                "了解PHP Laravel框架",
-                            ]
-                        },
-                        "work": {
-                            "info-title": "工作经历",
-                            "info-list": [
-                                {
-                                    "position": "爬虫工程师实习生 - TransferEasy(2018.03.12 ~ 2018.06.15)",
-                                    "desc": "使用Python Scrapy框架开发网络爬虫",
-                                },
-                                {
-                                    "position": "Python开发工程师 - 孢子科技(北京)有限公司(2018.09.15 ~ 2018.10.15)",
-                                    "desc": "使用Python语言开发各类爬虫；使用Python Flask框架进行Web前后端开发",                                    
-                                }
-                            ],                            
-                        },
-                        "project": {
-                            "info-title": "相关链接",
-                            "info-list": [
-                                {
-                                    "title": "Demo",
-                                    "link": {
-                                        "title": "链接",
-                                        "content": "http://dev.feihu1996.cn/works",
-                                    },
-                                },                              
-                            ]
-                        }
-                    },
-                    "en": {
-                        "me": {
-                            "username": "Angus",
-                            "persona-tag": "Python / Web / Mobile Internet"
-                        },
-                        "profile": {
-                            "info-title": "Basic Info",
-                            "info-list": {
-                                "name": {
-                                    "title": "Name",
-                                    "content": "Shaoxiang Gao"
-                                },
-                                "gender": {
-                                    "title": "Gender",
-                                    "content": "Male"
-                                },
-                                "education-background": {
-                                    "title": "Education",
-                                    "content": "Bachelor Degree"
-                                },
-                                "graduate-school": {
-                                    "title": "School",
-                                    "content": "SICNU"
-                                },
-                                "graduation-year": {
-                                    "title": "Graduate",
-                                    "content": "2018"
-                                },
-                                "major": {
-                                    "title": "Major",
-                                    "content": "Economics"                    
-                                }                
-                            }
-                        },
-                        "contact": {
-                            "info-title": "Contact",
-                            "info-list": {
-                                "mobile-phone": {
-                                    "title": "Mobile Phone",
-                                    "content": "17343009173"
-                                },
-                                "email": {
-                                    "title": "Email",
-                                    "content": "gsx0312@qq.com"
-                                },
-                                "github": {
-                                    "title": "GitHub",
-                                    "content": "github.com/feihu1996x"
-                                },
-                                "blog": {
-                                    "title": "Blog",
-                                    "content": "feihu1996.cn"
-                                },                                
-                            }
-                        },
-                        "stack": {
-                            "info-title": "Tech Stack",
-                            "stack-list": {
-                                "front-end": {
-                                    "title": "Front-End",
-                                    "content": "HTML/CSS、JavaScript、Vue.js、Webpack、Gulp、MUI、JQuery、BootStrap、ECharts、Layui"
-                                },
-                                "backend": {
-                                    "title": "Back-End",
-                                    "content": "Python、Flask、Django、Scrapy、Node.js、Express、Koa、PHP、Laravel、Go、Ruby、C/C++、MySQL、MongoDB、Redis"
-                                },
-                                "other": {
-                                    "title": "Other",
-                                    "content": "Linux、Nginx、Docker、Git、Selenium、Appium、Hadoop"
-                                }
-                            }
-                        },
-                        "code": {
-                            "info-title": "WeChat Qr Code"
-                        },
-                        "skill": {
-                            "info-title": "Skill Description",
-                            "skill-list": [
-                                "Familiar with HTML, CSS and JavaScript, including ES5, ES6 and ES7",
-                                "Familiar with the Vue library，such as Vue.js, Vue Resource, Axios, Vue Router, Vuex",
-                                "Familiar with the development of Hybrid App(with MUI)",
-                                "Familiar with the WeChat Development",
-                                "Familiar with frontend build system, such as Gulp and Webpack",
-                                "Familiar with Python and relevant web framework，such as Django and Flask，Experience with Django REST framework",
-                                "Familiar with Python web crawler technology，such as RegExp, XPath, Urllib, requests, packet capture analysis, Scrapy, BeautifulSoup, distributed spider, and so on",
-                                "Familiar with Node.js and relevant web framework，such as Express and Koa",
-                                "Familiar with MySQL, MongoDB and Redis database",
-                                "Familiar with RESTFul Api style",
-                                "Familiar with automatic testing tools, such as Selenium and Appium",
-                                "Familiar with Linux operation system",
-                                "Familiar with common operation of Docker",
-                                "Familiar with Git version control system",
-                                "Familiar with commom configuration of Nginx",
-                                "Familiar with basic principles of network communication, such as HTTP/TCP/IP",
-                                "Experience with ECharts, a powerful, interactive charting and visualization js library",
-                                "Experience with JQuery and BootStrap",
-                                "Experience with Hadoop ecosphere，such as HDFS、MapReduce、Hive、SQoop",
-                                "Experience with PHP, Go, Ruby, C, C++",
-                                "Experience with PHP Laravel web framewwork",
-                            ]
-                        },
-                        "work": {
-                            "info-title": "Work Experience",                            
-                            "info-list": [
-                                {
-                                    "position": "Data Engineer Intern - transfereasy.com(2018.03.12 ~ 2018.06.15)",
-                                    "desc": "build data crawler system with Python Scrapy framework",
-                                },
-                                {
-                                    "position": "Python Development Engineer - baozizhuli.com(2018.09.15 ~ 2018.10.15)",
-                                    "desc": "build data crawler system with Python;web development with Python Flask framework",
-                                }
-                            ],                            
-                        },                        
-                        "project": {
-                            "info-title": "Relevant Link",
-                            "info-list": [
-                                {
-                                    "title": "Demo",
-                                    "link": {
-                                        "title": "Link",
-                                        "content": "http://dev.feihu1996.cn/works",
-                                    },
-                                },                                       
-                            ]
-                        }
-                    }                    
-                },
-                source: null,
-            },
-            mounted(){
-                this.init();
-            },
-            methods: {
-                init(){
-                    this.source = this.data['zh-cn'];
-                    if('?language=zh-cn' == location.search){
-                        this.source = this.data['zh-cn'];
-                    }
-                    if('?language=en' == location.search){
-                        this.source = this.data['en'];
-                    }
-                    console.log(this.source);
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>
